@@ -1,0 +1,11 @@
+{% extends '_base.html' %}
+
+{% block title %}{{survey_title}} - Thank You!}{% endblock %}
+
+{% block content %}
+
+<h1>Thank you!</h1>
+<p>We appreciate you taking the time to complete our {{survey_title}}.</p>
+<p><br>{{q_and_a|safe}}</p>
+
+{% endblock %}

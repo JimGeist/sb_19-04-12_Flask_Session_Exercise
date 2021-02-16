@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(72,72,94);
+    color: #CCC;
+}
+
+span {
+    padding-right: 10px;
+}
+
+p {
+    font-size: 2rem;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.5rem;
+}
+
+input {
+    margin-top: 0.5rem;
+    font-size: 1.5rem
+}
+
+label {
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.flashes {
+    list-style-type: none;
+}
+
+.warning {
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
