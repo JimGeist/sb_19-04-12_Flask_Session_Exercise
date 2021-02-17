@@ -13,6 +13,11 @@
     <div id="content">
         {% block content %} content {% endblock %}
     </div>
+    {% if debug %}
+    <p>session = {{session["survey_session"]}}, <br>
+        len = {{len(session["survey_session"])}}
+    </p>
+    {% endif %}
     {% block scripts %} {% endblock %}
 </body>
 
