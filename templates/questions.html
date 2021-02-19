@@ -7,6 +7,16 @@
 <p><span>Question {{question_nbr + 1}} of {{question_nbr_max}}:</span>{{question_text}}
 </p>
 
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+<ul class="flashes">
+    {% for category, message in messages %}
+    <li class="{{ category }}">{{ message|safe }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+
 <form action="/answer" method="post" id="answer">
     {% for answer, answer_form_ctrl in question_answers %}
     <input type="radio" name="q-{{question_nbr}}-choices" id="{{answer_form_ctrl}}" value="{{answer}}" required>

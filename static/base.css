@@ -49,3 +49,7 @@ label {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
 }
+
+a {
+    color: rgb(156,220,254)
+}
