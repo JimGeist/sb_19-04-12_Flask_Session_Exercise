@@ -38,3 +38,14 @@ label {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+.okay {
+    color: rgb(0, 180, 0);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.debug {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}

@@ -14,8 +14,10 @@
         {% block content %} content {% endblock %}
     </div>
     {% if debug %}
-    <p>session = {{session["survey_session"]}}, <br>
-        len = {{len(session["survey_session"])}}
+    <br><br>
+    <hr>
+    <p class="debug"><strong>session</strong> = {{ session[session_name] }}, <br><br>
+        <strong>cookie</strong> = {{cookie}}
     </p>
     {% endif %}
     {% block scripts %} {% endblock %}
